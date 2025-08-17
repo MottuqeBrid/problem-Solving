@@ -99,4 +99,22 @@ function factorial(n) {
   return result;
 }
 
-console.log(factorial(2));
+console.log(factorial(5));
+
+// Problem 10: PingPong Challenge
+function pingPong(n) {
+  let result = "";
+  for (let i = 1; i <= n; i++) {
+    if (i % 15 === 0) {
+      result = "PingPong";
+    } else if (i % 3 === 0) {
+      result = "Ping";
+    } else if (i % 5 === 0) {
+      result = "Pong";
+    } else {
+      result = i;
+    }
+  }
+  return result;
+}
+console.log(pingPong(15));
