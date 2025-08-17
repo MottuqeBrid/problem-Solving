@@ -73,3 +73,15 @@ function findEvenNumbers(arr) {
 }
 
 console.log(findEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+// Problem 8: Capitalize First Letter of Each Word
+function capitalizeFirstLetter(str) {
+  const words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+  }
+  return words.join(" ");
+}
+console.log(capitalizeFirstLetter("hello world sdfvs gdf"));
+
+
