@@ -19,3 +19,12 @@ function countVowels(str) {
   return count;
 }
 console.log(countVowels("programming"));
+
+// Problem 3: Check for Palindrome
+function isPalindrome(str) {
+  const reversed = reverseString(str);
+  return str === reversed;
+}
+console.log(isPalindrome("hello"));
+
+// 
